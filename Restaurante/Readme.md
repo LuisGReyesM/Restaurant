@@ -6,6 +6,10 @@ Link repositorio Luis Reyes Miranda. https://github.com/LuisGReyesM/Restaurant
 
 Comentarios generales.
 
+SOBRE LAS CONSULTAS MYSQL.
+
+Se creo en el directorio un package Consultas con los query solicitados en el ejercicio
+
 SOBRE EL INGRESO AL SISTEMA.
 Para ingresar al sistema, se habilitó la seguridad, las credenciales son;
 Username : user
