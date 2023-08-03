@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.util.Date;
 
 @Entity
-@Table(name="plato")
+@Table(name="pedido")
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
@@ -18,9 +18,9 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
-    @Column(name ="Mesa_Id")
-    private int mesaID;
-    @Column(name ="Camarero_Id")
+    @Column(name ="Mesa_ID")
+    private int mesaId;
+    @Column(name ="Camarero_ID")
     private int camareroId;
     @Column(name ="Fecha")
     private Date fecha;

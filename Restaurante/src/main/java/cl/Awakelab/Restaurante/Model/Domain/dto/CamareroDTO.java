@@ -15,5 +15,5 @@ public class CamareroDTO {
     private int ID;
     private String nombre;
     private int edad;
-    private Date Fecha_Inicio;
+    private Date FechaInicio;
 }

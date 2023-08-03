@@ -1,5 +1,7 @@
 package cl.Awakelab.Restaurante.Model.Persistence.mapper;
 
+import cl.Awakelab.Restaurante.Model.Domain.dto.PedidoDTO;
+import cl.Awakelab.Restaurante.Model.Persistence.entity.Pedido;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

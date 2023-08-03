@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.util.Date;
 
 @Entity
-@Table(name="plato")
+@Table(name="camarero")
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
@@ -26,6 +26,6 @@ public class Camarero {
     private int edad;
 
     @Column(name ="Fecha_Inicio")
-    private Date fechaincio;
+    private Date fechaInicio;
 
 }
