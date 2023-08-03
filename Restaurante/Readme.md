@@ -4,23 +4,26 @@ Prueba de salida, Full Stack Java Trainee, Bootcamp Awakelab a través de Talent
 
 Link repositorio Luis Reyes Miranda. https://github.com/LuisGReyesM/Restaurant
 
-Pendientes por realizar
-Casos de prueba.
-Se utiliza js con fecth para la lectura de los archivos Json.
-
-
 Comentarios generales.
 
+SOBRE EL INGRESO AL SISTEMA.
 Para ingresar al sistema, se habilitó la seguridad, las credenciales son;
 Username : user
 Password : 1234
 
+SOBRE LA BÚSQUEDA.
+
 Para realizar la búsqueda, se debe elegir uno de los campos por medio de los option
 buttons.
-
 Luego se presiona sobre el boton buscar y despliega los datos solicitados.
+Se utiliza js con fecth para la lectura de los archivos Json.
+
+SOBRE LAS PRUEBAS UNITARIAS Y ALGORITMOS:
+
+Se crea un package CalculadoraDescuentos para crear Algoritmos y casos de prueba.
 
 
+OTRAS COSNIDERACIONES.
 
 1. Se trabaja con BD de datos entregada para el ejercicio, alojada en mysql.
 2. Se utiliza Spring Security aplicando diferentes perfiles de acuerdo a las necesidades de cada usuario, así solo se visualiza la información útil para cada uno.
@@ -30,7 +33,7 @@ Luego se presiona sobre el boton buscar y despliega los datos solicitados.
 
 
 
-Detalle de la prueba de salida
+DETALLE DE LA PRUEBA DE SALIDA:
 
 Examen de Certificación
 Plan Formativo: Desarrollador de Aplicaciones web Full Stack Java Trainee
