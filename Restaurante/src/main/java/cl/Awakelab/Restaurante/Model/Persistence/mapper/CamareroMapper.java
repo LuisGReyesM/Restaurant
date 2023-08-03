@@ -23,7 +23,4 @@ public interface CamareroMapper {
     List<CamareroDTO> toCamareros(List<Camarero> camarero);
     @InheritInverseConfiguration
     Camarero toCamarerodto(CamareroDTO camareroDTO);
-
-
-
 }
