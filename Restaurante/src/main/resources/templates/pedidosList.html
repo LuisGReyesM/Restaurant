@@ -16,6 +16,32 @@
         <h1 class="titulo">Lista de Pedidos</h1>
     </header>
     <main class="main-form">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <select class="form-control" id="fecha">
+                        <!-- Opciones para el combobox de fechas -->
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="camarero">Camarero:</label>
+                    <select class="form-control" id="camarero">
+                        <!-- Opciones para el combobox de camareros -->
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="mesa">Mesa:</label>
+                    <select class="form-control" id="mesa">
+                        <!-- Opciones para el combobox de mesas -->
+                    </select>
+                </div>
+            </div>
+        </div>
         <table class="table" id="pedidosTable">
             <thead class="table-dark">
             <tr>
@@ -23,6 +49,7 @@
                 <th>Camarero</th>
                 <th>Fecha</th>
                 <th>Total</th>
+                <th>Ver</th>
             </tr>
             </thead>
             <tbody>
@@ -30,7 +57,7 @@
         </table>
     </main>
 
-    <script th:src="@{/js/listarClientes.js}"></script>
+    <script th:src="@{/js/listadoPedidos.js}"></script>
 </div>
 </body>
 </html>
