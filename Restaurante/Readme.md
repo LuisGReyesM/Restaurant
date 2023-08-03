@@ -2,13 +2,12 @@ Participante.
 
 Prueba de salida, Full Stack Java Trainee, Bootcamp Awakelab a través de Talento Digital.
 
-Link repositorio Luis Reyes Miranda. 
+Link repositorio Luis Reyes Miranda. https://github.com/LuisGReyesM/Restaurant
 
-
-https://github.com/LuisGReyesM/Restaurant
-
-
-
+Pendientes por realizar
+Casos de prueba.
+Security (aunque el ejercicio no lo pide)
+Se utiliza js con fecth para la lectura de los archivos Json.
 
 
 Comentarios generales.
