@@ -1,0 +1,37 @@
+Consulta 1:
+
+SELECT c.Nombre AS Nombre_Camarero, p.Total AS Total_Padado, m.Numero AS Numero_Mesa, p.ID AS ID_Pedido
+FROM pedido p
+JOIN camarero c ON p.Camarero_ID = c.ID
+JOIN mesa m ON p.Mesa_ID = m.ID
+WHERE p.ID = 1;
+
+Consulta 2;
+
+SELECT Mesa_ID, COUNT(*) AS Cantidad_de_Pedidos
+FROM pedido
+GROUP BY Mesa_ID;
+
+Consulta 3;
+
+SELECT c.ID, c.Nombre, SUM(p.Total) as Monto_Ventas
+FROM camarero c
+LEFT JOIN pedido p ON c.ID = p.Camarero_ID
+GROUP BY c.ID, c.Nombre
+ORDER BY c.Nombre DESC;
+
+Consulta 4;
+
+SELECT p.ID as Plato_ID, p.Nombre as Plato_Nombre, COUNT(dp.Plato_ID) as Cantidad_Solicitudes
+FROM plato p
+LEFT JOIN detalle_pedido dp ON p.ID = dp.Plato_ID
+GROUP BY p.ID, p.Nombre
+ORDER BY Cantidad_Solicitudes DESC;
+
+Consulta 5;
+
+SELECT p.ID as Plato_ID, p.Nombre as Plato_Nombre, COUNT(dp.Plato_ID) as Total_Vendidos, SUM(p.Precio) as Valor_Total
+FROM plato p
+LEFT JOIN detalle_pedido dp ON p.ID = dp.Plato_ID
+GROUP BY p.ID, p.Nombre
+ORDER BY p.Nombre ASC;
