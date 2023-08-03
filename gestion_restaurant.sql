@@ -153,6 +153,33 @@ LOCK TABLES `plato` WRITE;
 INSERT INTO `plato` VALUES (1,'Ensalada César','Lechuga, pollo, queso parmesano, aderezo césar',7.50,'Entrada'),(2,'Burger Clásica','Carne de res, queso, lechuga, tomate',10.00,'Plato principal'),(3,'Tarta de manzana','Tarta de manzana con una bola de helado de vainilla',5.00,'Postre'),(4,'Sopa de tomate','Sopa de tomate con albahaca y croutons',6.00,'Entrada'),(5,'Pasta carbonara','Spaghetti, huevo, queso parmesano, panceta',9.00,'Plato principal');
 /*!40000 ALTER TABLE `plato` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `usuario`
+--
+
+DROP TABLE IF EXISTS `usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `usuario` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(500) NOT NULL,
+  `role` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuario`
+--
+
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'Luis Reyes','super','$2a$12$HpZWenHacSU28PRbPlSDtep.Wvh1AwhHFX5rXlX.DHi5cZuztAlDi','SUPER');
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -163,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-08-03  4:57:01
+-- Dump completed on 2023-08-03  8:21:09
