@@ -6,11 +6,14 @@ Link repositorio Luis Reyes Miranda. https://github.com/LuisGReyesM/Restaurant
 
 Pendientes por realizar
 Casos de prueba.
-Security (aunque el ejercicio no lo pide)
 Se utiliza js con fecth para la lectura de los archivos Json.
 
 
 Comentarios generales.
+
+Para ingresar al sistema, se habilitó la seguridad, las credenciales son;
+Username : user
+Password : 1234
 
 Para realizar la búsqueda, se debe elegir uno de los campos por medio de los option
 buttons.
