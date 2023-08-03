@@ -19,7 +19,7 @@ public interface CamareroMapper {
 
     })
     CamareroDTO toCamarero(Camarero camarero);
-    List<CamareroDTO> toPlatos(List<Camarero> camarero);
+    List<CamareroDTO> toCamareros(List<Camarero> camarero);
     @InheritInverseConfiguration
     Camarero toCamarerodto(CamareroDTO camareroDTO);
 

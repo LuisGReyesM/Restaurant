@@ -1,7 +1,5 @@
 package cl.Awakelab.Restaurante.Model.Persistence.mapper;
 
-import cl.Awakelab.Restaurante.Model.Domain.dto.PlatoDTO;
-import cl.Awakelab.Restaurante.Model.Persistence.entity.Plato;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -14,14 +12,14 @@ public interface PedidoMapper {
 
     @Mappings({
             @Mapping(source = "ID", target = "ID"),
-            @Mapping(source = "nombre", target = "nombre"),
-            @Mapping(source = "descripcion", target = "descripcion"),
-            @Mapping(source = "precio", target = "precio"),
-            @Mapping(source = "categoria", target = "categoria"),
+            @Mapping(source = "mesaId", target = "mesaId"),
+            @Mapping(source = "camareroId", target = "camareroId"),
+            @Mapping(source = "fecha", target = "fecha"),
+            @Mapping(source = "total", target = "total"),
 
     })
-    PlatoDTO toPlato(Plato plato);
-    List<PlatoDTO> toPlatos(List<Plato> plato);
+    PedidoDTO toPedido(Pedido pedido);
+    List<PedidoDTO> toPedidos(List<Pedido> pedido);
     @InheritInverseConfiguration
-    Plato toPlatodto(PlatoDTO platoDTO);
+    Pedido toPedidodto(PedidoDTO pedidoDTO);
 }
