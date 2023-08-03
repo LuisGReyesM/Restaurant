@@ -12,6 +12,12 @@ Se utiliza js con fecth para la lectura de los archivos Json.
 
 Comentarios generales.
 
+Para realizar la búsqueda, se debe elegir uno de los campos por medio de los option
+buttons.
+
+Luego se presiona sobre el boton buscar y despliega los datos solicitados.
+
+
 
 1. Se trabaja con BD de datos entregada para el ejercicio, alojada en mysql.
 2. Se utiliza Spring Security aplicando diferentes perfiles de acuerdo a las necesidades de cada usuario, así solo se visualiza la información útil para cada uno.
